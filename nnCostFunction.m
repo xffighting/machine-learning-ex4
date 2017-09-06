@@ -79,6 +79,7 @@ for i = 1:m,
     a2 = [1; a2];
     z3 = Theta2 * a2;
     a3 = sigmoid(z3);
+    h = a3;
     % Initial the corresponding class with value 1
     y_vect = zeros(num_labels,1);
     label_value = y(i);
